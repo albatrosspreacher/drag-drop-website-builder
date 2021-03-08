@@ -15,9 +15,9 @@ The project itself will be <span style="color:blue">open source</span> and will 
 
 
 #### Technologies Used:
-UI/UX: Adobe Xd
-Front End: HTML, CSS, Bootstrap (CSS Library)
-Back End: JS
-Web Developement Framework: Flask
-DevOps: Github
-Web Hosting: [glitch.com](www.glitch.com)
+- UI/UX: Adobe Xd
+- Front End: HTML, CSS, Bootstrap (CSS Library)
+- Back End: JS
+- Web Developement Framework: Flask
+- DevOps: Github
+- Web Hosting: [glitch.com](www.glitch.com)

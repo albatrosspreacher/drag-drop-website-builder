@@ -1,5 +1,5 @@
 #loading {
-    background: url('/img/loader.gif') no-repeat center center;
+    background: url_for('static', filename='loader.gif') no-repeat center center;
     position: absolute;
     top: 0;
     left: 0;

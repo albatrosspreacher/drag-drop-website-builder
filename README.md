@@ -2,6 +2,8 @@
 
 Mini Project for ITT Lab, MIT, Manipal
 
+The abstract of our project is also available 👉 [here](https://cdn.glitch.com/5328350f-d2c9-47dd-bd13-150714777736%2Fitt-abstract.png?v=1615203682918) 👈
+
 #### Problem Statement:
 
 Nowadays, most companies rely on websites for authenticity and to reach a wider audience. Building a good website however, requires extensive sense of aesthetic and knowledge of programming languages like HTML, CSS, and JS.

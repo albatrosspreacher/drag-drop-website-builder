@@ -1,5 +1,7 @@
 # drag-drop-website-builder
 
+![](https://travis-ci.com/nandiniproothi/drag-drop-website-builder.svg?token=V3cCrzJNiEzij5CNxMec&branch=main)
+
 Mini Project for ITT Lab, MIT, Manipal
 
 ##### This project is live 👉 [here](https://enthusiastic-quiet-jonquil.glitch.me) 👈 <br>

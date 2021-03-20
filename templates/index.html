@@ -1,14 +1,127 @@
 <html>
-  <head>
-    
-    <title>↓ home ↓</title>
-    
-  </head>
-  <body>
-    
-  </body>
-  <script
-    type="text/javascript"
-    src="{{ url_for('static', filename='index.js') }}"
-  ></script>
+
+<head>
+  <title>↓ home ↓</title>
+  <link rel="shortcut icon" href="https://img.icons8.com/dusk/64/000000/monitor--v1.png"
+    title="Monitor icon by Icons8" />
+  <meta charset="utf-8" />
+  <!-- meta tags for SEO using Open Graph Protocol -->
+  <meta name="description" content="drag and drop website builder!" />
+  <meta name="keywords" content="HTML, CSS, JavaScript, Developer" />
+  <meta name="author" content="smolpkg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta property="og:image:url" content="https://img.icons8.com/dusk/64/000000/monitor--v1.png" />
+  <meta property="og:image:width" content="300" />
+  <meta property="og:image:alt" content="a monitor graphic" />
+  <meta property="og:title" content="website builder" />
+  <meta property="og:description" content="a drag and drop website builder" />
+  <!-- meta tags for twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:creator" content="@smolpkg" />
+  <meta name="twitter:image" content="https://img.icons8.com/dusk/64/000000/monitor--v1.png" />
+  <meta name="twitter:image:width" content="300" />
+  <meta name="twitter:image:alt" content="a monitor graphic" />
+  <meta name="twitter:description" content="a drag and drop website builder!" />
+
+  <!-- all Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link type="text/css" href="{{ url_for('static', filename='styles/index.css') }}" rel="stylesheet" />
+  <!-- add google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- nav bar starts -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #011627; opacity: 90%;">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <!--empty-->
+      </ul>
+    </div>
+    <ul class="navbar-nav me-auto">
+      <a class="navbar-brand" href="#" style="color: #cdedf6">drag and drop website builder</a>
+    </ul>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: #cdedf6">source code</a>
+        </li>
+      </ul>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+  <!-- nav bar ends -->
+  <div class="container-fluid">
+    <!-- content begins-->
+  <div class="row">
+    <!-- assets -->
+    <div class="col-sm-3" style="border-right: 0.5px solid black;">
+      <p class="text-center" style="font-size: 35px;">
+        Assets
+      </p>
+      <hr width="auto">
+      <!-- first row starts -->
+      <div class="row">
+        <div class="col" style="margin: 5px;">
+          <label for="radioBtn" style="font-size: 15px;">
+            <input type="radio" aria-label="Radio button for following text input" id="radioBtn"> Radio
+          </label>
+        </div>
+        <div class="col">
+          <button class="btn btn-primary">Button</button>
+        </div>
+        <div class="col">
+          <label for="checkBox" style="font-size: 15px;">
+          <input type="checkbox" aria-label="Radio button for following text input" id="checkBox"> Checkbox
+        </label>
+        </div>
+      </div>
+      <!-- first row ends -->
+      <br>
+      <!-- second row starts -->
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+          <input type="text" id="textField" class="form-control" placeholder="Input Field" width="200px">
+        </div>
+        <div class="col"></div>
+      </div>
+      <!-- second row ends -->
+    </div>
+    <!--assets end-->
+    <!-- canvas begins -->
+    <div class="col-sm-6" style="border-left: 0.5px solid black; border-right: 0.5px solid black;">
+      hello
+    </div>
+    <!-- canvas ends -->
+    <!-- properties -->
+    <div class="col-sm-3" style="border-left: 0.5px solid black;">
+      hi
+    </div>
+    <!-- properties ends -->
+  </div>
+  <!-- content ends -->
+  </div>
+  <!-- footer -->
+  <footer class="blockquote-footer" style="position: relative; background-color: #cdedf6; text-align: center; color: #303030;">
+    made with <img src="https://cdn.glitch.com/35b30786-9a8e-46fa-abe0-758284828f27%2F8heart.png?v=1616062910915"
+      height="20px"> in manipal —
+  </footer>
+  <!-- footer ends -->
+</body>
+<script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+  integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+<script src="{{ url_for('static', filename='index.js') }}"></script>
+
 </html>

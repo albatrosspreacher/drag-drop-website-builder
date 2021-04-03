@@ -26,27 +26,27 @@
 
   <!-- all Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <link type="text/css" href="{{ url_for('static', filename='styles/index.css') }}" rel="stylesheet" />
   <!-- add google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 
 <body>
   <!-- nav bar starts -->
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #011627; opacity: 90%;">
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <!--empty-->
       </ul>
     </div>
     <ul class="navbar-nav me-auto">
-      <a class="navbar-brand" href="#" style="color: #cdedf6">drag and drop website builder</a>
+      <a class="navbar-brand" href="#">drag and drop website builder</a>
     </ul>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#" style="color: #cdedf6">source code</a>
+          <a class="nav-link" href="#">source code</a>
         </li>
       </ul>
     </div>
@@ -60,7 +60,7 @@
     <!-- content begins-->
   <div class="row">
     <!-- assets -->
-    <div class="col-sm-3" style="border-right: 0.5px solid black;">
+    <div class="col-sm-3">
       <p class="text-center" style="font-size: 35px;">
         Assets
       </p>
@@ -68,7 +68,7 @@
       <!-- first row starts -->
       <div class="row">
         <div class="col">
-          <label for="radioBtn" style="font-size: 15px;">
+          <label for="radioBtn" class="textSelect">
             <input type="radio" aria-label="Radio button for following text input" id="radioBtn"> Radio
           </label>
         </div>
@@ -76,7 +76,7 @@
           <button class="btn btn-primary">Button</button>
         </div>
         <div class="col">
-          <label for="checkBox" style="font-size: 15px;">
+          <label for="checkBox" class="textSelect">
           <input type="checkbox" aria-label="Radio button for following text input" id="checkBox"> Checkbox
         </label>
         </div>
@@ -95,12 +95,12 @@
     </div>
     <!--assets end-->
     <!-- canvas begins -->
-    <div class="col-sm-6" style="border-left: 0.5px solid black; border-right: 0.5px solid black;">
+    <div class="col-sm-6">
       hello
     </div>
     <!-- canvas ends -->
     <!-- properties -->
-    <div class="col-sm-3" style="border-left: 0.5px solid black;">
+    <div class="col-sm-3">
       hi
     </div>
     <!-- properties ends -->
@@ -108,7 +108,7 @@
   <!-- content ends -->
   </div>
   <!-- footer -->
-  <footer class="blockquote-footer" style="position: relative; background-color: #cdedf6; text-align: center; color: #303030;">
+  <footer class="blockquote-footer">
     made with <img src="https://cdn.glitch.com/35b30786-9a8e-46fa-abe0-758284828f27%2F8heart.png?v=1616062910915"
       height="20px"> in manipal —
   </footer>
@@ -122,6 +122,6 @@
   integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
   integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-<script src="{{ url_for('static', filename='index.js') }}"></script>
+  <script src="/script.js" defer></script>
 
 </html>

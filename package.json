@@ -17,7 +17,7 @@
     "url": "https://github.com/nandiniproothi/drag-drop-website-builder/issues"
   },
   "engines": {
-    "node" : "12.x"
+    "node": "12.x"
   },
   "homepage": "https://github.com/nandiniproothi/drag-drop-website-builder#readme",
   "dependencies": {

@@ -1,22 +1,32 @@
-nav{
-    background-color: #011627; opacity: 90%;
+nav {
+  background-color: #011627;
+  opacity: 90%;
 }
-a{
-    color: #cdedf6
-}
-
-.col-sm-3{
-    border-right: 0.5px solid black;
+a {
+  color: #cdedf6;
 }
 
-.col-sm-6{
-    border-left: 0.5px solid black; border-right: 0.5px solid black;
+.col-sm-3 {
+  border-right: 0.5px solid black;
 }
 
-.textSelect{
-    font-size: 15px;
+.col-sm-6 {
+  border-left: 0.5px solid black;
+  border-right: 0.5px solid black;
 }
 
-footer{
-    position: relative; background-color: #cdedf6; text-align: center; color: #303030;
+.textSelect {
+  font-size: 15px;
+}
+
+.canvasRow {
+  border: 0.5px dotted black;
+  height: 116px;
+}
+
+footer {
+  position: relative;
+  background-color: #cdedf6;
+  text-align: center;
+  color: #303030;
 }

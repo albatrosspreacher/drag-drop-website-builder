@@ -10,6 +10,10 @@ app.get("/", (request, response) => {
   response.sendFile(__dirname + "/views/index.html");
 });
 
+app.get("/login", (request, response) => {
+  response.sendFile(__dirname + "/views/login.html");
+});
+
 app.get("/templates", (request, response) => {
   response.sendFile(__dirname + "/views/templates.html");
 });

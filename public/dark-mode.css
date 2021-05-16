@@ -1,0 +1,37 @@
+body{
+    background-color: #011627;
+}
+nav {
+    background-color: #cdedf6;
+    opacity: 90%;
+    color: #011627;
+  }
+  a {
+    color: #011627;
+  }
+  
+  .col-sm-3 {
+    border-right: 0.5px solid white;
+  }
+  
+  .col-sm-6 {
+    border-left: 0.5px solid white;
+    border-right: 0.5px solid white;
+  }
+  
+  .textSelect {
+    font-size: 15px;
+  }
+  
+  .canvasRow {
+    border: 0.5px dotted white;
+    height: 116px;
+  }
+  
+  footer {
+    position: relative;
+    background-color: #cdedf6;
+    text-align: center;
+    color: #303030;
+  }
+  

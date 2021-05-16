@@ -46,3 +46,14 @@ function verifyGoogle() {
     console.log("recaptcha rendered!");
   }
   //js code to verify recaptcha ends
+
+  function changeTheme(){
+    w = new Worker("change-theme.js")
+    var theme = document.querySelector("#theme-link").getAttribute("href");
+    w.postMessage(theme);
+    w.onmessage = e => {
+    var theme_change = e.data;
+    document.getElementById("theme-link").href = theme_change;
+    w.terminate();
+  };
+  }

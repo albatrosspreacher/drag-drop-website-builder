@@ -43,35 +43,16 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <!-- add google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/style.css" />
+    
+    <link rel="stylesheet" href="/light-mode.css" id="theme-link"/>
   </head>
 
   <body>
     <!-- nav bar starts -->
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="collapse navbar-collapse navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/templates">templates</a>
-          </li>
-        </ul>
-      </div>
       <ul class="navbar-nav me-auto">
         <a class="navbar-brand" href="#">drag and drop website builder</a>
       </ul>
-      <div class="collapse navbar-collapse navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">source code</a>
-          </li>
-        </ul>
-      </div>
       <button
         class="navbar-toggler"
         type="button"
@@ -83,6 +64,19 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="collapse navbar-collapse navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/templates">templates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">source code</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="changeTheme();">change theme</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <!-- nav bar ends -->
     <div class="container-fluid">
@@ -147,15 +141,11 @@
       in manipal —
     </footer>
     <!-- footer ends -->
-    <!-- simple analytics starts -->
+    <!-- simple analytics starts 
     <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
     <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
-    <!-- simple analytics ends -->
+     simple analytics ends -->
   </body>
-  <script
-    type="text/javascript"
-    src="{{ url_for('static', filename='index.js') }}"
-  ></script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script
     src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

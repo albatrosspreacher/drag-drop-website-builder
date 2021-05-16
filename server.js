@@ -8,27 +8,26 @@ const emoji = require("node-emoji");
 app.use(express.static("public"));
 
 app.get("/", (request, response) => {
-  response.sendFile(__dirname + "/views/index.html"); //render index.html
+  response.sendFile(__dirname + "/views/index.html"); // render index.html
 });
 
-app.get("/login", (request, response) => {
-  response.sendFile(__dirname + "/views/login.html");
-});
+app.get("/login",
+        (request,
+         response) => { response.sendFile(__dirname + "/views/login.html"); });
 
-app.get("/templates", (request, response) => {
-  response.sendFile(__dirname + "/views/templates.html");
-});
+app.get(
+    "/templates",
+    (request,
+     response) => { response.sendFile(__dirname + "/views/templates.html"); });
 
-app.get("/feedback", (request, response) => {
-  response.sendFile(__dirname + "/views/feedback.html");
-});
+app.get(
+    "/feedback",
+    (request,
+     response) => { response.sendFile(__dirname + "/views/feedback.html"); });
 
 // listen for requests :)
 const listener = app.listen(process.env.PORT, () => {
   console.log("Your app is live!");
-  console.log(
-    emoji.random().emoji +
-      " View it here -> http://localhost:" +
-      listener.address().port
-  ); //easy access 😎
+  console.log(emoji.random().emoji + " View it here -> http://localhost:" +
+              listener.address().port); // easy access 😎
 });

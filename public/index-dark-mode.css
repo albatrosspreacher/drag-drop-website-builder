@@ -20,10 +20,9 @@ nav {
 .textSelect {
   font-size: 15px;
 }
-.canvasRow {
-  border: 0.5px dotted white;
-  height: 116px;
-}
+.row {
+    padding: 10px;
+  }
 footer {
   position: fixed;
   left: 0;

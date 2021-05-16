@@ -8,7 +8,7 @@ const emoji = require("node-emoji");
 app.use(express.static("public"));
 
 app.get("/", (request, response) => {
-  response.sendFile(__dirname + "/views/index.html"); //render index.html
+  response.sendFile(__dirname + "/views/index.html"); // render index.html
 });
 
 app.get("/login", (request, response) => {
@@ -30,5 +30,5 @@ const listener = app.listen(process.env.PORT, () => {
     emoji.random().emoji +
       " View it here -> http://localhost:" +
       listener.address().port
-  ); //easy access 😎
+  ); // easy access 😎
 });

@@ -50,8 +50,8 @@ function verifyGoogle() {
 //js code to verify recaptcha ends
 
 function changeTheme() {
-  w = new Worker("change-theme.js") //web worker created
-  var theme = document.querySelector("#theme-link").getAttribute("href"); //fetch the current css file name 
+  var w = new Worker("change-theme.js"); //web worker created
+  var theme = document.querySelector("#theme-link").getAttribute("href"); //fetch the current css file name
   w.postMessage(theme); //pass this value to the worker
   w.onmessage = e => {
     var theme_change = e.data; //fetch the message posted by the worker
@@ -60,13 +60,3 @@ function changeTheme() {
   };
 }
 
-function changeTemplatesTheme() {
-  w = new Worker("templates-change-theme.js") //web worker created
-  var theme = document.querySelector("#templates-theme-link").getAttribute("href"); //fetch the current css file name 
-  w.postMessage(theme); //pass this value to the worker
-  w.onmessage = e => {
-    var theme_change = e.data; //fetch the message posted by the worker
-    document.getElementById("templates-theme-link").href = theme_change; //change theme accordingly
-    w.terminate();
-  };
-}

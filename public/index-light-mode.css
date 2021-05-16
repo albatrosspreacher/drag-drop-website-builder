@@ -1,4 +1,4 @@
-body{
+body {
   background-color: #fcfffc;
 }
 nav {
@@ -8,25 +8,22 @@ nav {
 .nav-link {
   color: #011627;
 }
-.nav-link:hover{
-color:#087e8b;
-}
-.navbar-brand{
-  color: #011627;
-}
-.navbar-brand:hover{
+.nav-link:hover {
   color: #087e8b;
 }
-
+.navbar-brand {
+  color: #011627;
+}
+.navbar-brand:hover {
+  color: #087e8b;
+}
 .textSelect {
   font-size: 15px;
 }
-
 .canvasRow {
   border: 0.5px dotted black;
   height: 116px;
 }
-
 footer {
   position: fixed;
   left: 0;

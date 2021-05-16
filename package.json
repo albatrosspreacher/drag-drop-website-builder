@@ -23,6 +23,7 @@
   "dependencies": {
     "node-emoji": "^1.10.0",
     "redis": "^3.1.1",
-    "server": "^1.0.32"
+    "server": "^1.0.32",
+    "xmlhttprequest-ssl": "^1.6.2"
   }
 }

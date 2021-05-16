@@ -19,6 +19,11 @@ app.get("/templates", (request, response) => {
   response.sendFile(__dirname + "/views/templates.html");
 });
 
+app.get("/feedback", (request, response) => {
+  response.sendFile(__dirname + "/views/feedback.html");
+});
+
+
 // listen for requests :)
 const listener = app.listen(process.env.PORT, () => {
   console.log("Your app is live!")

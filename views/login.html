@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>↓ home ↓</title>
+    <title>↓ login ↓</title>
     <link
       rel="shortcut icon"
       href="https://img.icons8.com/dusk/64/000000/monitor--v1.png"
@@ -87,14 +87,13 @@
     <!-- nav bar ends -->
     <div class="container-fluid">
       <!-- content starts -->
-    <div class="container">
+      <div class="container">
         <!-- signup begins -->
         <div class="row">
           <div class="col"></div>
           <div class="col">
             <br />
             <form>
-              
               <button
                 type="button"
                 onclick="verifyGoogle();"
@@ -146,23 +145,23 @@
   <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
+  <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyBO_ZfNowNYfsvrv9hH_JmhSfRq5wh63QI",
-    authDomain: "drag-drop-website-builder.firebaseapp.com",
-    projectId: "drag-drop-website-builder",
-    storageBucket: "drag-drop-website-builder.appspot.com",
-    messagingSenderId: "947584397572",
-    appId: "1:947584397572:web:951d588be8ce2f6f72e051"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  const auth = firebase.auth();
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBO_ZfNowNYfsvrv9hH_JmhSfRq5wh63QI",
+      authDomain: "drag-drop-website-builder.firebaseapp.com",
+      projectId: "drag-drop-website-builder",
+      storageBucket: "drag-drop-website-builder.appspot.com",
+      messagingSenderId: "947584397572",
+      appId: "1:947584397572:web:951d588be8ce2f6f72e051"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
     const db = firebase.database();
-</script>
+  </script>
   <script src="/script.js" defer></script>
 </html>

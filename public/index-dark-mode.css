@@ -23,6 +23,10 @@ nav {
 .row {
     padding: 10px;
 }
+p{
+  padding-left: 10px;
+  color: #cdedf6;
+}
 .col-sm-6{
     padding: 10px;
 }

@@ -23,6 +23,9 @@ nav {
 .row {
   padding: 10px;
 }
+p{
+  padding-left: 10px;
+}
 .col-sm-6{
   padding: 10px;
 }

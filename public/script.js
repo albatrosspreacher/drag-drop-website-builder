@@ -1,9 +1,9 @@
 function verifyGoogle() {
+  /*
     var provider = new firebase.auth.GoogleAuthProvider();
     auth
       .signInWithPopup(provider)
       .then(result => {
-        /** @type {firebase.auth.OAuthCredential} */
         var credential = result.credential;
   
         // This gives you a Google Access Token. You can use it to access the Google API.
@@ -26,6 +26,7 @@ function verifyGoogle() {
         var credential = error.credential;
         // ...
       });
+      
   }
   
   //js code to verify recaptcha starts
@@ -44,16 +45,28 @@ function verifyGoogle() {
       }
     );
     console.log("recaptcha rendered!");
+    */
   }
   //js code to verify recaptcha ends
 
   function changeTheme(){
-    w = new Worker("change-theme.js")
-    var theme = document.querySelector("#theme-link").getAttribute("href");
-    w.postMessage(theme);
+    w = new Worker("change-theme.js") //web worker created
+    var theme = document.querySelector("#theme-link").getAttribute("href"); //fetch the current css file name 
+    w.postMessage(theme); //pass this value to the worker
     w.onmessage = e => {
-    var theme_change = e.data;
-    document.getElementById("theme-link").href = theme_change;
+    var theme_change = e.data; //fetch the message posted by the worker
+    document.getElementById("theme-link").href = theme_change; //change theme accordingly
+    w.terminate();
+  };
+  }
+
+  function changeTemplatesTheme(){
+    w = new Worker("templates-change-theme.js") //web worker created
+    var theme = document.querySelector("#templates-theme-link").getAttribute("href"); //fetch the current css file name 
+    w.postMessage(theme); //pass this value to the worker
+    w.onmessage = e => {
+    var theme_change = e.data; //fetch the message posted by the worker
+    document.getElementById("templates-theme-link").href = theme_change; //change theme accordingly
     w.terminate();
   };
   }

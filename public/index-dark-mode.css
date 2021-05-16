@@ -17,15 +17,7 @@ nav {
 .navbar-brand:hover{
     color: #087e8b;
 }
-.col-sm-3 {
-    border-right: 0.5px solid white;
-}
-  
-.col-sm-6 {
-    border-left: 0.5px solid white;
-    border-right: 0.5px solid white;
-}
-  
+
 .textSelect {
     font-size: 15px;
 }

@@ -43,8 +43,9 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    
     <link rel="stylesheet" href="/index-light-mode.css" id="theme-link"/>
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
   </head>
 
   <body>
@@ -84,16 +85,25 @@
     <!-- nav bar ends -->
     <div class="container-fluid">
       <!-- content starts -->
+      <br>
       <form action="https://send.pageclip.co/yHmuihUVZUjHHAqyWUsImweo4ksx2xy7" class="pageclip-form" method="post">
         <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
-        <input type="text" name="name" placeholder="Jane Doe" />
-        <input type="email" name="email" placeholder="jane@doe.com" />
-        <input type="text" name="feedback" placeholder="Enter your feedback here!">
-      
-        <!-- This button will have a loading spinner. Keep the inner span for best results. -->
-        <button type="submit" class="pageclip-form__submit">
-          <span>Send</span>
-        </button>
+        <div class="col-sm-3">
+            <input type="text" class="form form-control" name="name" placeholder="Jane Doe" />
+        </div> <br>
+        <div class="col-sm-3">
+            <input type="email" class="form form-control" name="email" placeholder="jane@doe.com" />
+        </div> <br>
+        <div class="col-sm-3">
+            <input type="text" class="form form-control" name="feedback" placeholder="Enter your feedback here!">
+        </div> <br>
+        
+        <div class="col-sm-3">
+            <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+        <button type="submit" class="pageclip-form__submit btn btn-secondary">
+            <span>Send</span>
+          </button>
+        </div>
       </form>
       <!-- content ends -->
     </div>

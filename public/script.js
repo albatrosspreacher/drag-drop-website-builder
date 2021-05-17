@@ -51,11 +51,13 @@ function verifyGoogle() {
 
 function changeTheme() {
   var w = new Worker("change-theme.js"); // web worker created
-  var theme = document.querySelector("#theme-link").getAttribute("href"); // fetch the current css file name
-  w.postMessage(theme); // pass this value to the worker
+  var theme = document.querySelector("#theme-link")
+                  .getAttribute("href"); // fetch the current css file name
+  w.postMessage(theme);                  // pass this value to the worker
   w.onmessage = e => {
     var theme_change = e.data; // fetch the message posted by the worker
-    document.getElementById("theme-link").href = theme_change; // change theme accordingly
+    document.getElementById("theme-link").href =
+        theme_change; // change theme accordingly
     w.terminate();
   };
 }

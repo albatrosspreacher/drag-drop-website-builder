@@ -21,19 +21,19 @@ nav {
   font-size: 15px;
 }
 .row {
-    padding: 10px;
+  padding: 10px;
 }
-p{
+p {
   padding-left: 10px;
   color: #cdedf6;
 }
-.col-sm-6{
-    padding: 10px;
+.col-sm-6 {
+  padding: 10px;
 }
-.card{
-    background-color: transparent;
-    color: white;
-    border: solid 0.5px white;
+.card {
+  background-color: transparent;
+  color: white;
+  border: solid 0.5px white;
 }
 footer {
   position: fixed;

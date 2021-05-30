@@ -60,14 +60,16 @@ function changeTheme() {
   };
 }
 
-function dragDrop(func, ev){
-  var w = new Worker("drag-drop.js");
-  if(func == "drag"){
-    console.log("drag " + ev);
-  }
-  else if(func == "drop"){
-    console.log("drop " + ev);
-  }
+function allowDrop(ev) {
+  ev.preventDefault();
 }
 
-dragDrop();
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}

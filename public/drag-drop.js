@@ -1,1 +1,0 @@
-console.log("Chandni is the smartest")

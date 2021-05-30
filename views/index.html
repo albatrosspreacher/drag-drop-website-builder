@@ -1,126 +1,94 @@
 <html>
-  <head>
-    <title>↓ home ↓</title>
-    <link
-      rel="shortcut icon"
-      href="https://img.icons8.com/dusk/64/000000/monitor--v1.png"
-      title="Monitor icon by Icons8"
-    />
-    <meta charset="utf-8" />
-    <!-- meta tags for SEO using Open Graph Protocol -->
-    <meta name="description" content="drag and drop website builder!" />
-    <meta name="keywords" content="HTML, CSS, JavaScript, Developer" />
-    <meta name="author" content="smolpkg" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta
-      property="og:image:url"
-      content="https://img.icons8.com/dusk/64/000000/monitor--v1.png"
-    />
-    <meta property="og:image:width" content="300" />
-    <meta property="og:image:alt" content="a monitor graphic" />
-    <meta property="og:title" content="website builder" />
-    <meta property="og:description" content="a drag and drop website builder" />
-    <!-- meta tags for twitter -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:creator" content="@smolpkg" />
-    <meta
-      name="twitter:image"
-      content="https://img.icons8.com/dusk/64/000000/monitor--v1.png"
-    />
-    <meta name="twitter:image:width" content="300" />
-    <meta name="twitter:image:alt" content="a monitor graphic" />
-    <meta
-      name="twitter:description"
-      content="a drag and drop website builder!"
-    />
 
-    <!-- all Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
+<head>
+  <title>↓ home ↓</title>
+  <link rel="shortcut icon" href="https://img.icons8.com/dusk/64/000000/monitor--v1.png"
+    title="Monitor icon by Icons8" />
+  <meta charset="utf-8" />
+  <!-- meta tags for SEO using Open Graph Protocol -->
+  <meta name="description" content="drag and drop website builder!" />
+  <meta name="keywords" content="HTML, CSS, JavaScript, Developer" />
+  <meta name="author" content="smolpkg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta property="og:image:url" content="https://img.icons8.com/dusk/64/000000/monitor--v1.png" />
+  <meta property="og:image:width" content="300" />
+  <meta property="og:image:alt" content="a monitor graphic" />
+  <meta property="og:title" content="website builder" />
+  <meta property="og:description" content="a drag and drop website builder" />
+  <!-- meta tags for twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:creator" content="@smolpkg" />
+  <meta name="twitter:image" content="https://img.icons8.com/dusk/64/000000/monitor--v1.png" />
+  <meta name="twitter:image:width" content="300" />
+  <meta name="twitter:image:alt" content="a monitor graphic" />
+  <meta name="twitter:description" content="a drag and drop website builder!" />
 
-    <link rel="stylesheet" href="/index-light-mode.css" id="theme-link" />
-  </head>
+  <!-- all Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 
-  <body>
-    <!-- nav bar starts -->
-    <nav class="navbar navbar-expand-lg">
-      <ul class="navbar-nav me-auto">
-        <a class="navbar-brand" href="/">drag and drop website builder</a>
+  <link rel="stylesheet" href="/index-light-mode.css" id="theme-link" />
+</head>
+
+<body>
+  <!-- nav bar starts -->
+  <nav class="navbar navbar-expand-lg">
+    <ul class="navbar-nav me-auto">
+      <a class="navbar-brand" href="/">drag and drop website builder</a>
+    </ul>
+    <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse"
+      data-target=".navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/templates">templates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">source code</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/feedback">feedback</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="changeTheme();">change theme</a>
+        </li>
       </ul>
-      <button
-        class="navbar-toggler navbar-light"
-        type="button"
-        data-toggle="collapse"
-        data-target=".navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/templates">templates</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">source code</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/feedback">feedback</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" onclick="changeTheme();"
-              >change theme</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- nav bar ends -->
-    <!-- content begins -->
-    <div class="container-fluid">
-      <div id="div1" ondrop="dragDrop('drop', event)" ></div>
-      <img id="drag1" src="" draggable="true" ondragstart="dragDrop('drag', event)" width="336" height="69">
-
     </div>
-    <!-- content ends -->
-    <!-- footer -->
-    <footer class="blockquote-footer">
-      made with
-      <img
-        src="https://cdn.glitch.com/35b30786-9a8e-46fa-abe0-758284828f27%2F8heart.png?v=1616062910915"
-        height="20px"
-      />
-      in manipal —
-    </footer>
-    <!-- footer ends -->
-    <!-- simple analytics starts
+  </nav>
+  <!-- nav bar ends -->
+  <!-- content begins -->
+  <div class="container-fluid">
+
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    <img id="drag1" src="https://cdn.glitch.com/5328350f-d2c9-47dd-bd13-150714777736%2Fbtn-info.png?v=1622359025574"
+      draggable="true" ondragstart="drag(event)">
+
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  </div>
+  <!-- content ends -->
+  <!-- footer -->
+  <footer class="blockquote-footer">
+    made with
+    <img src="https://cdn.glitch.com/35b30786-9a8e-46fa-abe0-758284828f27%2F8heart.png?v=1616062910915" height="20px" />
+    in manipal —
+  </footer>
+  <!-- footer ends -->
+  <!-- simple analytics starts
     <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
     <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
      simple analytics ends -->
-  </body>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script
-    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-    crossorigin="anonymous"
-  ></script>
-  <script src="/script.js" defer></script>
+</body>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+  integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+<script src="/script.js" defer></script>
+
 </html>

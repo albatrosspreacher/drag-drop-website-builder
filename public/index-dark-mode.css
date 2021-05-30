@@ -20,6 +20,14 @@ nav {
 .textSelect {
   font-size: 15px;
 }
+#div1, #div2 {
+  float: left;
+  width: 75px;
+  height: 60px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
 .row {
   padding: 10px;
 }

@@ -59,3 +59,15 @@ function changeTheme() {
     w.terminate();
   };
 }
+
+function dragDrop(func, ev){
+  var w = new Worker("drag-drop.js");
+  if(func == "drag"){
+    console.log("drag " + ev);
+  }
+  else if(func == "drop"){
+    console.log("drop " + ev);
+  }
+}
+
+dragDrop();

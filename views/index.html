@@ -44,6 +44,9 @@
     <div class="collapse navbar-collapse navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
+          <a class="nav-link" href="/templates">my files</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="/templates">templates</a>
         </li>
         <li class="nav-item">
@@ -61,17 +64,65 @@
   <!-- nav bar ends -->
   <!-- content begins -->
   <div class="container-fluid">
-
     <div class="row">
       <div class="col-lg-3">
-        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-          <img id="drag1" src="https://cdn.glitch.com/5328350f-d2c9-47dd-bd13-150714777736%2Fbtn-info.png?v=1622359025574"
+        <h5>Draggable Elements</h5>
+      </div>
+      <div class="col-lg-3">
+        <h5>Drop here!</h5>
+      </div>
+      <div class="col-lg-3">
+        <button id="generateHTML" class="btn btn-primary" onclick="generateHTML()">Generate HTML</button>
+      </div>
+    </div>
+    <br> <br>
+    <div class="row">
+      <div class="col-lg-3">
+        <div id="div9" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img id="drag9" src="https://cdn.glitch.com/5328350f-d2c9-47dd-bd13-150714777736%2FHeading.png?v=1622828745808"
           draggable="true" ondragstart="drag(event)">
         </div>
       </div>
   
       <div class="col-lg-3">
-        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div10" class="dragster" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </div>
+      
+      <div class="col-lg-3">
+        <input type="text" id="heading_text" class="form-control" placeholder="Heading Text"> &nbsp;
+        <input type="number" id="heading_size" class="form-control" placeholder="Heading Size (1 to 5)">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3">
+        <div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img id="drag7" src="https://cdn.glitch.com/5328350f-d2c9-47dd-bd13-150714777736%2Finput.form-control.png?v=1622828672781"
+          draggable="true" ondragstart="drag(event)">
+        </div>
+      </div>
+  
+      <div class="col-lg-3">
+        <div id="div8" class="dragster" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </div>
+      <div class="col-lg-3">
+        <input type="text" id="input1_ph" class="form-control" placeholder="Input1 Placeholder"> &nbsp;
+        <input type="text" id="input1_type" class="form-control" placeholder="Input1 Type">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3">
+        <div id="div11" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img id="drag12" src="https://cdn.glitch.com/5328350f-d2c9-47dd-bd13-150714777736%2Finput.form-control.png?v=1622828672781"
+          draggable="true" ondragstart="drag(event)">
+        </div>
+      </div>
+  
+      <div class="col-lg-3">
+        <div id="div8" class="dragster" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </div>
+      <div class="col-lg-3">
+        <input type="text" id="input2_ph" class="form-control" placeholder="Input2 Placeholder"> &nbsp;
+        <input type="text" id="input2_type" class="form-control" placeholder="Input2 Type">
       </div>
     </div>
     <div class="row">
@@ -83,34 +134,60 @@
       </div>
   
       <div class="col-lg-3">
-        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div2" class="dragster" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </div>
+      <div class="col-lg-3">
+        <input type="text" class="form-control" id="btn_text" placeholder="Button Text"> &nbsp;
+        <div class="form-group">
+          <select class="form-control" id="btn_color">
+            <option default>Pick a color</option>
+            <option>btn btn-primary</option>
+            <option>btn btn-secondary</option>
+            <option>btn btn-danger</option>
+            <option>btn btn-success</option>
+            <option>btn btn-light</option>
+            <option>btn btn-dark</option>
+            <option>btn btn-info</option>
+          </select>
+        </div>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-3">
-        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-          <img id="drag1" src="https://cdn.glitch.com/5328350f-d2c9-47dd-bd13-150714777736%2Fbtn-info.png?v=1622359025574"
+        <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img id="drag3" src="https://cdn.glitch.com/5328350f-d2c9-47dd-bd13-150714777736%2Fp.png?v=1622828667472" height="105px"
           draggable="true" ondragstart="drag(event)">
         </div>
       </div>
   
       <div class="col-lg-3">
-        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div4" class="dragster" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </div>
+      <div class="col-lg-3">
+        <textarea type="text" id="p_text" class="form-control" placeholder="Paragraph Text"></textarea>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-3">
-        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-          <img id="drag1" src="https://cdn.glitch.com/5328350f-d2c9-47dd-bd13-150714777736%2Fbtn-info.png?v=1622359025574"
+        <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img id="drag5" src="https://cdn.glitch.com/5328350f-d2c9-47dd-bd13-150714777736%2Fcard.png?v=1622828668208" height="105px"
           draggable="true" ondragstart="drag(event)">
         </div>
       </div>
   
       <div class="col-lg-3">
-        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div6" class="dragster" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </div>
+      <div class="col-lg-3">
+        <input type="url" id="card_link" class="form-control" placeholder="Card Image Link"> &nbsp;
+        <input type="text" id="card_title" class="form-control" placeholder="Card Title"> &nbsp;
+        <input type="text" id="card_body" class="form-control" placeholder="Card Body">
       </div>
     </div>
+   <br><br>
   </div>
+  
+</div>
   <!-- content ends -->
   <!-- footer -->
   <footer class="blockquote-footer">

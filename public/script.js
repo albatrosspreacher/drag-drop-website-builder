@@ -73,3 +73,21 @@ function drop(ev) {
   var data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
 }
+
+function generateHTML(){
+  var w = new Worker("generate-html.js"); // web worker created
+  var heading_text = document.getElementById('heading_text').value;
+  var heading_size = document.getElementById('heading_size').value;
+  var input1_ph = document.getElementById('input1_ph').value;
+  var input1_type = document.getElementById('input1_type').value;
+  var input2_ph = document.getElementById('input2_ph').value;
+  var input2_type = document.getElementById('input2_type').value;
+  var btn_text = document.getElementById('input1_ph').value;
+  var btn_color = document.querySelector('#btn_color').value;
+  var p = document.getElementById('p_text').value;
+  var card_link = document.getElementById('card_link').value;
+  var card_title = document.getElementById('card_title').value;
+  var card_body = document.getElementById('card_body').value;
+  var x = [heading_size, heading_text, input1_ph, input1_type, input2_ph, input2_type, btn_color, btn_text, p, card_link, card_title, card_body];
+  w.postMessage(x);
+}

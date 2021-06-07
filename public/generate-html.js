@@ -12,11 +12,16 @@ onmessage = (e) => {
     var card_title = e.data[10];
     var card_body = e.data[11];
     const socket = new WebSocket('ws://localhost:8080');
-
+    var data = {};
+    /*
     // Connection opened
     socket.addEventListener('open', function (event) {
         if(heading_size!= ''){
-            socket.send([heading_size, heading_text])
+            data.heading_size = heading_size;
+            data.heading_text = heading_text;
+            console.log(data);
+            socket.send(heading_size, heading_text)
         }
     });
+    */
 }

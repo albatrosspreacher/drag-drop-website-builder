@@ -9,15 +9,16 @@ var htmlGenerator = require('html-generator-npm')
 
 const wss = new WebSocket.Server({ port: 8080 });
 
+/*
 wss.on('connection', function connection(ws) {
 
   // Wire up logic for the message event (when a client sends something)
-  ws.on('message', function incoming(message) {
-    console.log('received: %s', message);
-    htmlGenerator.initiateFile();
-    htmlGenerator.appendButton(message[1], message[0]);
+  ws.onmessage = function(e){
+    console.log(e.data)
+   
+    }
 });
-});
+*/
 
 app.use(express.static("public"));
 

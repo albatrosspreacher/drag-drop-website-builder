@@ -1,19 +1,19 @@
 function verifyGoogle() {
-  /*
+  
     var provider = new firebase.auth.GoogleAuthProvider();
     auth
       .signInWithPopup(provider)
       .then(result => {
         var credential = result.credential;
 
-        // This gives you a Google Access Token. You can use it to access the
-  Google API. var token = credential.accessToken;
+        // This gives you a Google Access Token. You can use it to access the Google API. 
+        var token = credential.accessToken;
         // The signed-in user info.
         var user = result.user;
         console.log(user.displayName);
         console.log(user.uid);
         localStorage.setItem('uid', user.uid)
-        window.location.replace("../");
+        window.location.replace("/files");
         // ...
       })
       .catch(error => {
@@ -45,7 +45,7 @@ function verifyGoogle() {
       }
     );
     console.log("recaptcha rendered!");
-    */
+    
 }
 // js code to verify recaptcha ends
 
@@ -90,4 +90,43 @@ function generateHTML(){
   var card_body = document.getElementById('card_body').value;
   var x = [heading_size, heading_text, input1_ph, input1_type, input2_ph, input2_type, btn_color, btn_text, p, card_link, card_title, card_body];
   w.postMessage(x);
+  setTimeout(function () {
+    // Create a root reference
+    var storageRef = firebase.storage().ref();
+
+    // Create a reference to 'mountains.jpg'
+    var mountainsRef = storageRef.child('generated-index.html');
+
+    // Create a reference to 'images/mountains.jpg'
+    var mountainImagesRef = storageRef.child('files/generated-index.html');
+
+    // While the file names are the same, the references point to different files
+    mountainsRef.name === mountainImagesRef.name;           // true
+    mountainsRef.fullPath === mountainImagesRef.fullPath;   // false 
+    // 'file' comes from the Blob or File API
+    var file = "/generated-index.html"
+    mountainImagesRef.put(file).then((snapshot) => {
+        console.log('Uploaded a blob or file!');
+        storageRef.child('files/generated-index.html').getDownloadURL()
+        .then((url) => {
+          // `url` is the download URL for 'images/stars.jpg'
+      
+          // This can be downloaded directly:
+          var xhr = new XMLHttpRequest();
+          xhr.responseType = 'blob';
+          xhr.onload = (event) => {
+            var blob = xhr.response;
+          };
+          xhr.open('GET', url);
+          xhr.send();
+      
+          // Or inserted into an <img> element
+          var div = document.getElementById('#generated-link');
+          div.innerHTML = url;
+        })
+        .catch((error) => {
+          // Handle any errors
+        });
+    });
+}, 12000)
 }

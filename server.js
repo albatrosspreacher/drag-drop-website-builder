@@ -4,10 +4,10 @@
 const express = require("express");
 const app = express();
 const emoji = require("node-emoji");
-var WebSocket = require('ws')
+//var WebSocket = require('ws')
 var htmlGenerator = require('html-generator-npm')
 
-const wss = new WebSocket.Server({ port: 8080 });
+//const wss = new WebSocket.Server({ port: 8080 });
 
 /*
 wss.on('connection', function connection(ws) {

@@ -67,6 +67,11 @@ wss.on('connection', function connection(ws) {
 
 app.use(express.static("public"));
 
+app.use(function (req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  next();
+})
+
 app.get("/", (request, response) => {
   response.sendFile(__dirname + "/views/index.html"); // render index.html
 });
